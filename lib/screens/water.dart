@@ -1,5 +1,6 @@
 import 'package:agile/screens/waterCalculator.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:numberpicker/numberpicker.dart';
 //import 'package:page_transition/page_transition.dart';
 //import 'package:smart_flare/smart_flare.dart';
@@ -18,7 +19,7 @@ class _WaterTrackerState extends State<WaterTracker> with TickerProviderStateMix
   
   AnimationController rippleController;
   Animation<double> rippleAnimation;
-
+ 
   // bool isSetData = true;
 
   @override
@@ -127,7 +128,8 @@ class _WaterTrackerState extends State<WaterTracker> with TickerProviderStateMix
                                 child: Text("Water Tracker",
                                 style: TextStyle(
                                   color: Colors.black,
-                                  fontSize: 50,
+                                  // fontSize: ScreenUtil().setSp(100, allowFontScalingSelf: true),
+                                  fontSize: 40.0,
                                   fontFamily: "PermanentMarker",
                                 )),
                              ),

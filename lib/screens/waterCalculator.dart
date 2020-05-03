@@ -112,7 +112,6 @@ class _WaterCalculatorState extends State<WaterCalculator> {
         Navigator.push(context, PageTransition(child: WaterTracker(), type: PageTransitionType.fade));
       });
     }
-
     });
   }
     
@@ -181,7 +180,7 @@ class _WaterCalculatorState extends State<WaterCalculator> {
               children: <Widget>[
                  Container(
                    width: MediaQuery.of(context).size.width,
-                                    child: Column(
+                      child: Column(
                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                     Row(
@@ -232,10 +231,10 @@ class _WaterCalculatorState extends State<WaterCalculator> {
                 ],
               ),
                  ),
-              SizedBox(height: 140,),
+              SizedBox(height: MediaQuery.of(context).size.height*0.15),
                   Container(
-                    width: 500,
-                    height: 250,
+                    width: MediaQuery.of(context).size.width *0.95,
+                    height:MediaQuery.of(context).size.height*0.3,
                       child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
@@ -281,10 +280,10 @@ class _WaterCalculatorState extends State<WaterCalculator> {
             ),
             Center(
                         child: Container(
-                      height: 100.0,
-                      width: 100.0,
+                      height: MediaQuery.of(context).size.height*0.14,
+                      width: MediaQuery.of(context).size.height*0.14,
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(50),
+                          borderRadius: BorderRadius.circular(MediaQuery.of(context).size.height*0.14),
                           color: Colors.white,
                           border: Border.all(
                               color: Color.fromRGBO(0, 153, 255,1),
