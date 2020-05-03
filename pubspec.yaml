@@ -29,6 +29,7 @@ dependencies:
   numberpicker: ^1.2.0
   percent_indicator: "^2.1.1"
   fluttertoast: ^4.0.1
+  youtube_player_flutter: ^6.1.0+7
   #video_player: ^0.10.9+1
   flutter_screenutil: ^1.1.0
   dynamic_theme: ^1.0.1

@@ -34,7 +34,7 @@ class _YogaState extends State<Yoga> {
     YogaList(imageUrl: 'https://image.flaticon.com/icons/svg/186/186938.svg',title: 'Bhastrika', videoUrl:'https://www.youtube.com/watch?v=upxeE2BTktc', description: 'Bhastrika is also known as Bellows Breath. It focuses on the inhalation just as much as the exhalation.', benifit: 'It produces heat, detoxifying and energizing the body. It tones the abdominal muscles and the digestive system.'),
   ];
   List<YogaPlaylist> yogaPlaylist = [
-    YogaPlaylist(playlistname: 'Introduction', yogaList: beginner, start: Color(0xFFFFF59D) , end: Color(0xFFFFEB3B), imageUrl: 'https://image.flaticon.com/icons/svg/2647/2647625.svg'),
+    YogaPlaylist(playlistname: 'Obesity', yogaList: beginner, start: Color(0xFFFFF59D) , end: Color(0xFFFFEB3B), imageUrl: 'https://image.flaticon.com/icons/svg/2647/2647625.svg'),
     YogaPlaylist(playlistname: 'Back Pain', yogaList: backPain, start: Color(0xFFEF9A9A) , end: Color(0xFFF44336),  imageUrl: 'https://image.flaticon.com/icons/svg/2647/2647564.svg'),
     YogaPlaylist(playlistname: 'Pranayama', yogaList: pranayama, start: Color(0xFFC8E6C9) , end: Color(0xFF66BB6A),  imageUrl: 'https://image.flaticon.com/icons/svg/2789/2789860.svg'),
   ];

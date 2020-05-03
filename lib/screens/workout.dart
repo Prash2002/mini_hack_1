@@ -1,6 +1,7 @@
 import 'package:agile/screens/yogaPlaylistScreen.dart';
 import 'package:agile/screens/yogacard.dart';
 import 'package:agile/screens/yogalist.dart';
+// import 'package:agile/screens/yogalist.dart';
 import 'package:flutter/material.dart';
 
 class Workout extends StatefulWidget {
