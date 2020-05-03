@@ -5,3 +5,5 @@ to track your water intake, know about various yoga asanas and workouts as well 
 
 This app has been built using flutter.
 P.S- Both the surprise challenges have been implemented.
+
+Link for the apk : https://drive.google.com/file/d/1JeMhfSWFOp_4_7h9PNVyUQSkZ_EHG7Kp/view?usp=sharing
