@@ -1,4 +1,6 @@
 import 'package:agile/screens/water.dart';
+import 'package:agile/screens/workout.dart';
+import 'package:agile/screens/yoga.dart';
 //import 'package:agile/screens/workout.dart';
 //import 'package:agile/screens/yoga.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: "SedgwickAve",
       ),
-      home: WaterTracker(),
+      home: Workout(),
     );
   }
 }
@@ -28,23 +30,23 @@ class MyApp extends StatelessWidget {
 
 // class _MyHomePageState extends State<MyHomePage> {
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: Text('AGILE'),
-//       ),
-//       body: SingleChildScrollView(
-//         child: Column(
-//           children: <Widget>[
-//             Yoga(),
-//             Workout(),
-//             Water(),
-//           ],
-//         )
-//       )
-//     );
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('AGILE'),
+      ),
+      body: 
+      SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            Yoga(),
+            Workout(),
+            WaterTracker(),
+          ],
+        )
+      )
+    );
+  }
 
-    
-//   }
-// }
+
