@@ -7,4 +7,7 @@ This app has been built using flutter.
 P.S- Both the surprise challenges have been implemented.
 
 Link for the apk : https://drive.google.com/file/d/1JeMhfSWFOp_4_7h9PNVyUQSkZ_EHG7Kp/view?usp=sharing
+Video URL : https://drive.google.com/open?id=1cmZL5HO_qECIu1XRCUWQXVD_KkJb7nIr
 P.P.S- app.apk has also been pushed into the repository along with the video
+
+
