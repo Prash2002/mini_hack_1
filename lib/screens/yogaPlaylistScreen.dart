@@ -1,17 +1,23 @@
+import 'package:agile/screens/yogaYouTube.dart';
 import 'package:agile/screens/yogalist.dart';
 import 'package:agile/screens/yogasancard.dart';
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 
 class YogaPlaylistScreen extends StatelessWidget {
 
   final YogaPlaylist yogaPlaylist;
   YogaPlaylistScreen({this.yogaPlaylist});
+
+  
   @override
   Widget build(BuildContext context) {
     List<YogaList> yogaList= yogaPlaylist.yogaList ;
     return Scaffold(
       body: SafeArea(
-              child: Container(height: MediaQuery.of(context).size.height,
+              child: Stack(
+                children:<Widget>[
+              Container(height: MediaQuery.of(context).size.height,
               decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [yogaPlaylist.start, yogaPlaylist.end],
@@ -35,9 +41,31 @@ class YogaPlaylistScreen extends StatelessWidget {
                     )
                 );
               },
-              
             ),
-        ),
+             ),
+             Padding(
+               padding: const EdgeInsets.only(bottom: 10.0),
+               child: Align(
+                 alignment: Alignment.bottomCenter,
+                 child: Container(
+                   padding: EdgeInsets.only(bottom:8,right:6),
+                   height: 70,
+                   width:70,
+                   decoration: BoxDecoration(
+                     shape: BoxShape.circle,
+                     color: Colors.black54,
+                   ),
+                   child: Center(
+                     child: IconButton(
+                       icon: Icon(Icons.play_arrow, size: 40,color: Colors.white,),
+                       onPressed: ()=> Navigator.push(context, 
+                       PageTransition(type: PageTransitionType.fade, child: YogaYoutubePlaylist(yogaPlaylist))),
+                     )),
+                 ),
+               ),
+             ),
+                ],
+              ),
       ),
     );
   }
